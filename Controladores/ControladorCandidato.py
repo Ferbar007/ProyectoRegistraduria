@@ -37,7 +37,10 @@ class ControladorCandidato():
         return self.repositorioCandidato.delete(id)
 
     def asignarPartido(self, id, idPartido):
+        print("Asignando un Candidato a un Partido con id", id)
         candidatoActual = Candidato(self.repositorioCandidato.findById(id))
         partidoActual = Partido(self.repositorioPartido.findById(idPartido))
         candidatoActual.partido = partidoActual
         return self.repositorioCandidato.save(candidatoActual)
+
+   

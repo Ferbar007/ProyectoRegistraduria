@@ -36,9 +36,11 @@ class ControladorPartido():
 
     """
     Relación candidato y partido
-    """
+    
     def asignarCandidato(self, id, idCandidato):
         partidoActual = Partido(self.repositorioPartido.findById(id))
         candidatoActual = Candidato(self.repositorioCandidato.findById(idCandidato))
         partidoActual.candidato = candidatoActual
         return self.repositorioPartido.save(partidoActual)
+    
+    """
