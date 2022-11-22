@@ -3,11 +3,14 @@ from Repositorios.RepositorioPartido import RepositorioPartido
 from Modelos.Candidato import Candidato
 from Modelos.Partido import Partido
 
+
 class ControladorCandidato():
     def __init__(self):    #este es el constructor del controlador
         print("Creando Controlador Candidato")
         self.repositorioCandidato = RepositorioCandidato()
         self.repositorioPartido = RepositorioPartido()
+
+
 
     def index(self):     #simula la información de forma de diccionario
         print("Listar todos los candidatos")
