@@ -43,5 +43,7 @@ class ControladorPartido():
         candidatoActual = Candidato(self.repositorioCandidato.findById(idCandidato))
         partidoActual.candidato = candidatoActual
         return self.repositorioPartido.save(partidoActual)
+        
+        #######
     
     """
